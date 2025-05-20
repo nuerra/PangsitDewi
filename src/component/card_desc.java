@@ -1,0 +1,73 @@
+package component;
+
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.RenderingHints;
+import java.awt.geom.Path2D;
+
+public class card_desc extends javax.swing.JPanel {
+
+    
+    public card_desc(String title, String description) {
+         initComponents();
+        setOpaque(false);
+        txt.setBackground(new Color(0, 0, 0, 0));
+        IbTitle.setText (title);
+        txt.setText(description);
+    }  
+    
+ 
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        IbTitle = new javax.swing.JLabel();
+        txt = new swing.text();
+
+        IbTitle.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        IbTitle.setForeground(new java.awt.Color(76, 74, 74));
+        IbTitle.setText("Title");
+        IbTitle.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 5, 1, 5));
+
+        txt.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 3, 3, 3));
+        txt.setColumns(20);
+        txt.setRows(5);
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(IbTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
+            .addComponent(txt, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(IbTitle)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(txt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+    }// </editor-fold>//GEN-END:initComponents
+
+    @Override
+    protected void paintComponent(Graphics grphcs) {
+        Graphics2D g2 = (Graphics2D) grphcs;
+        g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        g2.setColor(new Color(255, 255, 255, 200));
+        Path2D.Float f = new Path2D.Float();
+        f.moveTo(0, 30);
+        f.curveTo(50, 0, 100, 40, 150, 0);
+        f.lineTo(150, getHeight());
+        f.lineTo(0, getHeight());
+        g2.fill(f);
+        super.paintComponent(grphcs);
+    }
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel IbTitle;
+    private swing.text txt;
+    // End of variables declaration//GEN-END:variables
+}
