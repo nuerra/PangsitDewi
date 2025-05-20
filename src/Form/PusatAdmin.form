@@ -40,11 +40,11 @@
                               <Component id="jScrollPane2" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="btnPerbaruiP" min="-2" max="-2" attributes="0"/>
-                                  <Component id="bntTambahP" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="btnBatalP" min="-2" max="-2" attributes="0"/>
-                                  <Component id="btnHapusP" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="btnPerbaruiP" max="32767" attributes="0"/>
+                                  <Component id="bntTambahP" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnBatalP" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="btnHapusP" alignment="0" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace pref="101" max="32767" attributes="0"/>
                               <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
@@ -72,13 +72,13 @@
                           <Component id="jScrollPane1" min="-2" pref="328" max="-2" attributes="0"/>
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="bntTambahP" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                               <Component id="btnPerbaruiP" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                               <Component id="btnBatalP" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
                               <Component id="btnHapusP" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
