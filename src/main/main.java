@@ -1,17 +1,14 @@
 package main;
-import Form.Dashboard;
+//import Form.Dashboard;
 import Form.Admin;
 import Form.Laporan;
 import Form.Transaksi;
-
-
-
 import swing.RoundedPanel;
-
 
 public class main extends javax.swing.JFrame {
 
    
+    
     public main() {
         initComponents();
         pnlMenu.setLayout(new java.awt.BorderLayout());
@@ -225,11 +222,10 @@ jLabel6.addMouseListener(new java.awt.event.MouseAdapter() {
 
     private void showDashboard() {
     pnlMenu.removeAll();
-    pnlMenu.add(new Dashboard(), java.awt.BorderLayout.CENTER);
+//    pnlMenu.add(new Dashboard(), java.awt.BorderLayout.CENTER);
     pnlMenu.repaint();
     pnlMenu.revalidate();
 }
-
 
 private void showAdmin() {
     pnlMenu.removeAll();
